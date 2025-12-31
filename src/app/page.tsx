@@ -226,6 +226,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Roadmap Section */}
+      <section className="py-24 md:py-32 px-6 md:px-8 bg-white border-t border-slate-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center mb-16 md:mb-24 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-6">Built for your Industry.</h2>
+            <p className="text-sm md:text-lg text-slate-600 font-medium max-w-xl">We are laser-focused on solving scheduling problems for specific businesses.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+            {/* Card 1: Medical (Live) */}
+            <div className="group relative bg-white p-8 md:p-10 rounded-[2.5rem] border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
+              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <svg viewBox="0 0 24 24" width="120" height="120" fill="currentColor"><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"></path></svg>
+              </div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-emerald-100">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  Live Now
+                </div>
+                <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight">Clinics & Doctors</h3>
+                <p className="text-sm text-slate-500 font-medium leading-relaxed mb-8">
+                  Optimized for General Practitioners, Physiotherapists, and Specialists. Handle patient queues, follow-ups, and cancellations automatically.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> Physiotherapy
+                  </li>
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> Dental Clinics
+                  </li>
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-700 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> Specialists
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 2: Sports (Coming Soon) */}
+            <div className="group relative bg-slate-50 p-8 md:p-10 rounded-[2.5rem] border border-slate-100 overflow-hidden">
+              <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity grayscale">
+                <svg viewBox="0 0 24 24" width="120" height="120" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
+              </div>
+              <div className="relative z-10 opacity-70 group-hover:opacity-100 transition-opacity">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-200 text-slate-500 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-slate-300">
+                  Coming Soon
+                </div>
+                <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight">Sports & Recreation</h3>
+                <p className="text-sm text-slate-500 font-medium leading-relaxed mb-8">
+                  Smart booking for Box Cricket, Badminton Courts, and Football Turfs. Group bookings and membership management coming down the line.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-400 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div> Box Cricket
+                  </li>
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-400 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div> Football Turfs
+                  </li>
+                  <li className="flex items-center gap-3 text-xs font-bold text-slate-400 uppercase tracking-wide">
+                    <div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div> Badminton Courts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-16 md:py-20 px-6 md:px-8 border-t border-slate-100 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-12 text-slate-500">
