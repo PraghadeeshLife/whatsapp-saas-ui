@@ -5,12 +5,16 @@ export interface TenantCreate {
     whatsapp_phone_number_id: string
     whatsapp_access_token: string
     webhook_verify_token?: string
+    google_calendar_id?: string
+    google_service_account_json?: string
 }
 
 export interface TenantUpdate {
     name?: string
     whatsapp_access_token?: string
     webhook_verify_token?: string
+    google_calendar_id?: string
+    google_service_account_json?: string
 }
 
 export interface Tenant {
@@ -20,6 +24,7 @@ export interface Tenant {
     whatsapp_phone_number_id: string
     whatsapp_access_token: string
     webhook_verify_token: string | null
+    google_calendar_id: string | null
     created_at: string
 }
 
